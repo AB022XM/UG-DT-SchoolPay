@@ -1,0 +1,38 @@
+{
+  "schoolPayApp": {
+    "paymentChannelEnt": {
+      "home": {
+        "title": "Payment Channel Ents",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Payment Channel Ent",
+        "createOrEditLabel": "Create or edit a Payment Channel Ent",
+        "notFound": "No Payment Channel Ents found"
+      },
+      "created": "A new Payment Channel Ent is created with identifier {{ param }}",
+      "updated": "A Payment Channel Ent is updated with identifier {{ param }}",
+      "deleted": "A Payment Channel Ent is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Payment Channel Ent {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment Channel Ent"
+      },
+      "id": "ID",
+      "recordUniqueIdentifier": "Record Unique Identifier",
+      "channelId": "Channel Id",
+      "channelCode": "Channel Code",
+      "channelName": "Channel Name",
+      "status": "Status",
+      "freeField1": "Free Field 1",
+      "freeField2": "Free Field 2",
+      "freeField3": "Free Field 3",
+      "isDeleted": "Is Deleted",
+      "help": {
+        "freeField1": "This is an additional field\ncreated in case there is need to\nadd a field without the need to alter database configs",
+        "freeField2": "This is an additional field\ncreated in case there is need to\nadd a field without the need to alter database configs",
+        "freeField3": "This is an additional field\ncreated in case there is need to\nadd a field without the need to alter database configs",
+        "isDeleted": "this is used to identify whether the\nrecord has been deleted or not (Y-deleted, N-Not deleted)"
+      }
+    }
+  }
+}

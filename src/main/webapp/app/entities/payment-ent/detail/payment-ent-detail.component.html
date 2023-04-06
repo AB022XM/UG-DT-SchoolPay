@@ -1,0 +1,90 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="paymentEnt">
+      <h2 data-cy="paymentEntDetailsHeading"><span jhiTranslate="schoolPayApp.paymentEnt.detail.title">Payment Ent</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ paymentEnt.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.recordUniqueIdentifier">Record Unique Identifier</span></dt>
+        <dd>
+          <span>{{ paymentEnt.recordUniqueIdentifier }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.paymentId">Payment Id</span></dt>
+        <dd>
+          <span>{{ paymentEnt.paymentId }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.paymentCode">Payment Code</span></dt>
+        <dd>
+          <span>{{ paymentEnt.paymentCode }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.customerId">Customer Id</span></dt>
+        <dd>
+          <span>{{ paymentEnt.customerId }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.feeAmount">Fee Amount</span></dt>
+        <dd>
+          <span>{{ paymentEnt.feeAmount }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.isAmountFixed">Is Amount Fixed</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'schoolPayApp.RecordStatus.' + paymentEnt.isAmountFixed }}">{{ paymentEnt.isAmountFixed }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.feeDescription">Fee Description</span></dt>
+        <dd>
+          <span>{{ paymentEnt.feeDescription }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.fixedAmount">Fixed Amount</span></dt>
+        <dd>
+          <span>{{ paymentEnt.fixedAmount }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.paymentName">Payment Name</span></dt>
+        <dd>
+          <span>{{ paymentEnt.paymentName }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.outstandingAmount">Outstanding Amount</span></dt>
+        <dd>
+          <span>{{ paymentEnt.outstandingAmount }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.paymentChannel">Payment Channel</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'schoolPayApp.PaymentChannel.' + paymentEnt.paymentChannel }}">{{ paymentEnt.paymentChannel }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.freeField1">Free Field 1</span></dt>
+        <dd>
+          <span>{{ paymentEnt.freeField1 }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.freeField2">Free Field 2</span></dt>
+        <dd>
+          <span>{{ paymentEnt.freeField2 }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.freeField3">Free Field 3</span></dt>
+        <dd>
+          <span>{{ paymentEnt.freeField3 }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentEnt.biller">Biller</span></dt>
+        <dd>
+          <div *ngIf="paymentEnt.biller">
+            <a [routerLink]="['/biller', paymentEnt.biller.id, 'view']">{{ paymentEnt.biller.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/payment-ent', paymentEnt.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

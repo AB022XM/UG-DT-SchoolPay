@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "schoolpay": {
+    "school-pay": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -76,15 +76,15 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "schoolpay:build:development",
+            "browserTarget": "school-pay:build:development",
             "port": 4200
           },
           "configurations": {
             "production": {
-              "browserTarget": "schoolpay:build:production"
+              "browserTarget": "school-pay:build:production"
             },
             "development": {
-              "browserTarget": "schoolpay:build:development"
+              "browserTarget": "school-pay:build:development"
             }
           },
           "defaultConfiguration": "development"

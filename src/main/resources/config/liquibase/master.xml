@@ -3,12 +3,6 @@
     xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-    <property name="now" value="now()" dbms="h2"/>
-    <property name="floatType" value="float4" dbms="h2"/>
-    <property name="uuidType" value="varchar(36)" dbms="h2"/>
-    <property name="datetimeType" value="datetime" dbms="h2"/>
-    <property name="clobType" value="clob" dbms="h2"/>
-    <property name="blobType" value="blob" dbms="h2"/>
     <property name="now" value="now()" dbms="mysql"/>
     <property name="floatType" value="float" dbms="mysql"/>
     <property name="clobType" value="clob" dbms="mysql"/>
@@ -17,7 +11,23 @@
     <property name="datetimeType" value="datetime(6)" dbms="mysql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185603_added_entity_Biller.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185604_added_entity_Student.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185605_added_entity_Customer.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185606_added_entity_BillerCatergory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185607_added_entity_ContactInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185608_added_entity_Address.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185609_added_entity_School.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185610_added_entity_PaymentEnt.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185611_added_entity_ValidateCustomerById.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185612_added_entity_Paybill.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185613_added_entity_AssociatedFees.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185614_added_entity_PaymentChannelEnt.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20230404185607_added_entity_constraints_ContactInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185610_added_entity_constraints_PaymentEnt.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185612_added_entity_constraints_Paybill.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230404185613_added_entity_constraints_AssociatedFees.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

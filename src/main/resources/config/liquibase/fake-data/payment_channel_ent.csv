@@ -1,0 +1,11 @@
+id;record_unique_identifier;channel_id;channel_code;channel_name;status;free_field_1;free_field_2;free_field_3;is_deleted
+1;86f6725f-169e-4cbd-9814-28ca9dcd52fa;37990;6334;ABSAINTERNETBANKING;ACTIVE;virtual copying deposit;Fresh bandwidth intermediate;alarm;ACTIVE
+2;d811c112-4276-4701-b07a-6710721017ab;15782;87787;USSD;INACTIVE;payment Berkshire;Georgia Soap;Borders Samoa;INACTIVE
+3;3ce7fbdc-97a4-42f3-a53f-e0ed83362c1e;88145;7906;OVERTHECOUNTER;INACTIVE;COM copying JBOD;Garden;motivating users;ACTIVE
+4;291cb63b-2f83-4698-8010-48c7e60d8e0c;26257;21021;POINTOFSALE;ACTIVE;Soft holistic purple;Handmade Frozen Intelligent;deposit;INACTIVE
+5;b2d3869d-f595-42b7-a957-7b31d0043373;30396;54317;USSD;ACTIVE;Investor Administrator;Bedfordshire;Plastic Corporate;ACTIVE
+6;9ffef720-0556-4466-9448-c8e1a06fab40;96730;2872;OVERTHECOUNTER;INACTIVE;Principal;dedicated Steel Track;Money SMTP cross-platform;INACTIVE
+7;9b5a2be3-fbfc-4dac-8c41-df96809ad1d1;33970;54322;USSD;ACTIVE;generation Liaison navigate;navigating;eyeballs;ACTIVE
+8;241ea6b9-e8a8-4197-b3f3-a89a5cf49c4a;65565;7296;POINTOFSALE;INACTIVE;gold Awesome;applications;engage Squares;INACTIVE
+9;6e5db70a-2743-40d2-863f-c689cd959d77;68514;7706;OVERTHECOUNTER;ACTIVE;Alabama iterate;Producer;whiteboard;INACTIVE
+10;39a8f6de-667b-4c5c-854f-6b51f5d63088;93141;17110;MOBILEAPP;INACTIVE;Balboa gold Auto;Moroccan;Ridge;ACTIVE

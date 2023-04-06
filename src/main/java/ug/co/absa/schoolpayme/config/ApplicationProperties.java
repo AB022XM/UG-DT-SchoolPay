@@ -3,7 +3,7 @@ package ug.co.absa.schoolpayme.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * Properties specific to Schoolpay.
+ * Properties specific to School Pay.
  * <p>
  * Properties are configured in the {@code application.yml} file.
  * See {@link tech.jhipster.config.JHipsterProperties} for a good example.

@@ -1,13 +1,7 @@
-sourceSets {
-    test {
-        java {
-            exclude 'ug/co/absa/schoolpayme/config/MysqlTestContainer.java'
-        }
-    }
-}
 dependencies {
     developmentOnly "org.springframework.boot:spring-boot-devtools:${springBootVersion}"
-    implementation "com.h2database:h2"
+    implementation "mysql:mysql-connector-java"
+    liquibaseRuntime "mysql:mysql-connector-java"
     testImplementation "org.testcontainers:mysql"
 }
 
@@ -79,6 +73,7 @@ task integrationTest(type: Test) {
     description = "Execute integration tests."
     group = "verification"
     include "**/*IT*", "**/*IntTest*"
+    exclude "**/*CucumberIT*"
     testLogging {
         events 'FAILED', 'SKIPPED'
     }

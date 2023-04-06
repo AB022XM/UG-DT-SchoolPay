@@ -1,8 +1,8 @@
 {
-  "name": "schoolpay",
+  "name": "school-pay",
   "version": "0.0.1-SNAPSHOT",
   "private": true,
-  "description": "Description for Schoolpay",
+  "description": "Description for SchoolPay",
   "license": "UNLICENSED",
   "scripts": {
     "app:start": "./gradlew",
@@ -68,7 +68,7 @@
     "webapp:test": "npm run test --"
   },
   "config": {
-    "backend_port": 9003,
+    "backend_port": "9001",
     "default_environment": "prod",
     "packaging": "jar"
   },

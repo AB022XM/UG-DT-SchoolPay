@@ -1,0 +1,9 @@
+{
+  "schoolPayApp": {
+    "RecordStatus": {
+      "null": "",
+      "ACTIVE": "True",
+      "INACTIVE": "False"
+    }
+  }
+}

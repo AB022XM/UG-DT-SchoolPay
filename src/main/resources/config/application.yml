@@ -41,6 +41,7 @@ management:
             'loggers',
             'prometheus',
             'threaddump',
+            'caches',
             'liquibase',
           ]
   endpoint:
@@ -91,7 +92,7 @@ management:
 
 spring:
   application:
-    name: Schoolpay
+    name: SchoolPay
   profiles:
     # The commented value for `active` can be replaced with valid Spring profiles to load.
     # Otherwise, it will be filled in by gradle when building the JAR file
@@ -115,7 +116,7 @@ spring:
       hibernate.jdbc.time_zone: UTC
       hibernate.id.new_generator_mappings: true
       hibernate.connection.provider_disables_autocommit: true
-      hibernate.cache.use_second_level_cache: false
+      hibernate.cache.use_second_level_cache: true
       hibernate.cache.use_query_cache: false
       hibernate.generate_statistics: false
       # modify batch size as necessary
@@ -138,13 +139,13 @@ spring:
       matching-strategy: ant_path_matcher
   task:
     execution:
-      thread-name-prefix: schoolpay-task-
+      thread-name-prefix: school-pay-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: schoolpay-scheduling-
+      thread-name-prefix: school-pay-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -185,12 +186,12 @@ jhipster:
   #   allow-credentials: true
   #   max-age: 1800
   mail:
-    from: Schoolpay@localhost
+    from: SchoolPay@localhost
   api-docs:
     default-include-pattern: ${server.servlet.context-path:}/api/**
     management-include-pattern: ${server.servlet.context-path:}/management/**
-    title: Schoolpay API
-    description: Schoolpay API documentation
+    title: School Pay API
+    description: School Pay API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:

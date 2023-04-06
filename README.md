@@ -1,4 +1,4 @@
-# Schoolpay
+# SchoolPay
 
 This application was generated using JHipster 7.9.3, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.9.3](https://www.jhipster.tech/documentation-archive/v7.9.3).
 
@@ -121,7 +121,7 @@ docker-compose -f src/main/docker/jhipster-control-center.yml up
 
 ### Packaging as jar
 
-To build the final jar and optimize the Schoolpay application for production, run:
+To build the final jar and optimize the SchoolPay application for production, run:
 
 ```
 ./gradlew -Pprod clean bootJar
@@ -134,7 +134,7 @@ To ensure everything worked, run:
 java -jar build/libs/*.jar
 ```
 
-Then navigate to [http://localhost:9003](http://localhost:9003) in your browser.
+Then navigate to [http://localhost:9001](http://localhost:9001) in your browser.
 
 Refer to [Using JHipster in production][] for more details.
 
@@ -161,6 +161,12 @@ Unit tests are run by [Jest][]. They're located in [src/test/javascript/](src/te
 ```
 npm test
 ```
+
+### Other tests
+
+Performance tests are run by [Gatling][] and written in Scala. They're located in [src/test/gatling](src/test/gatling).
+
+To use those tests, you must install Gatling from [https://gatling.io/](https://gatling.io/).
 
 For more information, refer to the [Running tests page][].
 
@@ -243,3 +249,4 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 [leaflet]: https://leafletjs.com/
 [definitelytyped]: https://definitelytyped.org/
 [angular cli]: https://cli.angular.io/
+[gatling]: https://gatling.io/

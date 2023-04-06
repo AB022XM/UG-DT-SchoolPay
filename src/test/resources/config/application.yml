@@ -33,13 +33,13 @@ spring:
     basename: i18n/messages
   task:
     execution:
-      thread-name-prefix: schoolpay-task-
+      thread-name-prefix: school-pay-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: schoolpay-scheduling-
+      thread-name-prefix: school-pay-scheduling-
       pool:
         size: 20
   thymeleaf:
@@ -56,9 +56,9 @@ server:
 # ===================================================================
 jhipster:
   clientApp:
-    name: 'schoolpayApp'
+    name: 'schoolPayApp'
   mail:
-    from: Schoolpay@localhost.com
+    from: SchoolPay@localhost.com
     base-url: http://127.0.0.1:8080
   logging:
     # To test json console appender

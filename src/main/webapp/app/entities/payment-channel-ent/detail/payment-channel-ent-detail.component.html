@@ -1,0 +1,92 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="paymentChannelEnt">
+      <h2 data-cy="paymentChannelEntDetailsHeading">
+        <span jhiTranslate="schoolPayApp.paymentChannelEnt.detail.title">Payment Channel Ent</span>
+      </h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ paymentChannelEnt.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentChannelEnt.recordUniqueIdentifier">Record Unique Identifier</span></dt>
+        <dd>
+          <span>{{ paymentChannelEnt.recordUniqueIdentifier }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentChannelEnt.channelId">Channel Id</span></dt>
+        <dd>
+          <span>{{ paymentChannelEnt.channelId }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentChannelEnt.channelCode">Channel Code</span></dt>
+        <dd>
+          <span>{{ paymentChannelEnt.channelCode }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentChannelEnt.channelName">Channel Name</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'schoolPayApp.PaymentChannel.' + paymentChannelEnt.channelName }}">{{
+            paymentChannelEnt.channelName
+          }}</span>
+        </dd>
+        <dt><span jhiTranslate="schoolPayApp.paymentChannelEnt.status">Status</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'schoolPayApp.RecordStatus.' + paymentChannelEnt.status }}">{{ paymentChannelEnt.status }}</span>
+        </dd>
+        <dt>
+          <span
+            jhiTranslate="schoolPayApp.paymentChannelEnt.freeField1"
+            [ngbTooltip]="'schoolPayApp.paymentChannelEnt.help.freeField1' | translate"
+            >Free Field 1</span
+          >
+        </dt>
+        <dd>
+          <span>{{ paymentChannelEnt.freeField1 }}</span>
+        </dd>
+        <dt>
+          <span
+            jhiTranslate="schoolPayApp.paymentChannelEnt.freeField2"
+            [ngbTooltip]="'schoolPayApp.paymentChannelEnt.help.freeField2' | translate"
+            >Free Field 2</span
+          >
+        </dt>
+        <dd>
+          <span>{{ paymentChannelEnt.freeField2 }}</span>
+        </dd>
+        <dt>
+          <span
+            jhiTranslate="schoolPayApp.paymentChannelEnt.freeField3"
+            [ngbTooltip]="'schoolPayApp.paymentChannelEnt.help.freeField3' | translate"
+            >Free Field 3</span
+          >
+        </dt>
+        <dd>
+          <span>{{ paymentChannelEnt.freeField3 }}</span>
+        </dd>
+        <dt>
+          <span
+            jhiTranslate="schoolPayApp.paymentChannelEnt.isDeleted"
+            [ngbTooltip]="'schoolPayApp.paymentChannelEnt.help.isDeleted' | translate"
+            >Is Deleted</span
+          >
+        </dt>
+        <dd>
+          <span jhiTranslate="{{ 'schoolPayApp.RecordStatus.' + paymentChannelEnt.isDeleted }}">{{ paymentChannelEnt.isDeleted }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/payment-channel-ent', paymentChannelEnt.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>
